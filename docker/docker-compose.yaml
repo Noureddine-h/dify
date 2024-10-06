@@ -190,7 +190,7 @@ services:
     networks:
       - default
     ports:
-      - "8077:80"  # Map port 80 inside the container to port 8080 on the host
+      - "8077:3000"  # Map port 80 inside the container to port 8080 on the host
 
   # The postgres database.
   db:
