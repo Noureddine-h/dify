@@ -178,7 +178,8 @@ services:
       timeout: 10s
       retries: 3
       start_period: 40s
-
+    ports:
+      - "5001:5001"  # Add this line to map external port 8080 to internal port 5001
   # worker service
   # The Celery worker for processing the queue.
   worker:
